@@ -9,7 +9,7 @@ Cattauragus Creek floods causing social, financial, and environmental issues; to
 This is the study area: Cattauragus Creek.  It flows into Lake Erie and affects many stakeholders along the Creek Coast, and the coast of Lake Erie.  Stakeholders include the Seneca Nation, the Army Corps of Engineers, citizens and business owners of Sunset Bay, and local, State, and Federal Government.
 ![](https://gardenwarriorsgoodseeds.files.wordpress.com/2015/01/mapphoto.jpg)
 
-
+  This section just looks different on your webpage, the picture is after the first sentence and the second sentence is not on there at all, which is the most important one because it explains the purpose and goal of the study. I think this is just an accident in code that could be fixed quickly when looked at again.
 
 # Materials and methods  
 
@@ -17,13 +17,14 @@ This is the study area: Cattauragus Creek.  It flows into Lake Erie and affects 
 * Filter elevation shapefiles
 * Filtering elevations
 * Filtering for precipitation
-* Establishing Flood Zones in Seneca Nation
+* Establishing Flood Zones in Seneca Nation  
 * Filtering by soil type
 * Filtering by vegetation type
 * Filtering by temperature/ date ( if ground is frozen, can't establish constructed wastelands)
 * Creating possible constructed wetland areas by selection/joining of filtered topics 
 
-
+  It would be nice to have a breakdown of materials, then methods. Also maybe a description of why you chose each variable to assist in finding wetland-suitable locations, why is it important? 
+  Are these written so that they are meant to be steps in your evaluation?
 
 
 ```{r, message=F, warning=F}
@@ -67,8 +68,8 @@ SNI_sp = as(SNI, Class = "Spatial")
 plot(SNI, max.plot = 10)
 ```
 
-
-
+Your code for inputting the shp file and making it Spatial looks good, appropriate use from a class learning. This satisfies the requirement of at least one R-created visual; displaying the SNI shapefile and LULC shapefile.
+  It looks like you are well on your way to breaking down the specifics of your data mentioned above into only SNI parcels.
 
 ```{r, warning=F} 
 
